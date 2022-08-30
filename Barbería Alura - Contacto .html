@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+
+<meta charset = "UTF-8"> 
+
+<html lang="es">
+
+    <head>
+
+        <title>Barbería Alura - Contacto</title>
+        <link rel="stylesheet" href="styleContactoBarbería.css">     
+        <link rel="stylesheet" href="reset.css">     
+
+    </head>
+
+    <body>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <header>
+        
+            <div class="caja">
+
+                <h1><img src ="imagenes productos barbería/logo.png" alt="Logo de la barbería"></h1>
+
+                <nav class="navegadorcontacto">
+
+                    <ul class="navegadorheader">
+
+                        <li> <a href="Barbería Alura .html">Home</a></li>
+                        <li> <a href="Barbería Alura - Nuestros productos .html">Productos</a></li>
+                        <li> <a href="Barbería Alura - Contacto .html">Contacto</a></li>        
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <form class="formulario">
+
+                <!--Formularios-->
+                <label class="etiquetasFormulario" for="nombreApellido">Nombre y Apellido</label>
+                <input 
+                    class="elementosFormulario" 
+                    type="text" 
+                    id="nombreApellido" 
+                    required> <!--Cuando cliqueamos en nombre y apellido nos manda a escribir en el input-->
+
+                <label class="etiquetasFormulario" for="correoElectrónico">Correo Electrónico</label>
+                <input class="elementosFormulario" 
+                    type="email" 
+                    id="correoElectrónico" 
+                    placeholder="email@dominio.com">
+
+                <label class="etiquetasFormulario" for="teléfono">Teléfono</label>
+                <input class="elementosFormulario" 
+                    type="tel" 
+                    id="teléfono"
+                    required
+                    placeholder="(XX) XXXX XXXX">
+
+                <!--Formulario de texto-->
+                <label class="etiquetasFormulario" for="mensaje">Mensaje</label>
+                <textarea 
+                    class="elementosFormulario" 
+                    id="mensaje" 
+                    cols="68" 
+                    rows="10" 
+                    required >
+                </textarea>
+                
+                <!--Lista de radios-->
+                <div>
+                    
+                    <p>Cómo te gustaría que te contactemos?</p>
+
+                    <label class="etiquetasFormulario" for="radio-email">
+                        <input type="radio" 
+                        name="contacto" 
+                        value="email" 
+                        id="radio-email">
+                    Email
+                    </label>
+
+                    <label class="etiquetasFormulario" for="radio-wpp">
+                        <input 
+                        type="radio" 
+                        name="contacto" 
+                        value="wpp" 
+                        id="radio-wpp"
+                        checked>
+                    WhatsApp
+                    </label>
+
+                    <label class="etiquetasFormulario" for="radio-teléfono">
+                        <input 
+                        type="radio" 
+                        name="contacto" v
+                        alue="teléfono" 
+                        id="radio-teléfono">
+                    Teléfono
+                    </label>
+
+                </div>
+                
+                
+                <!--Elección de horario-->
+                <div>
+
+                    <p class="etiquetasFormulario" >En qué horario preferirías ser atendido?</p>
+                    <select class="selectTurno">
+    
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+    
+                    </select>
+
+                </div>
+
+                <!--Checkbox-->
+                <label class="etiquetasFormulario">
+                    
+                    <input 
+                    class="checkbox" 
+                    type="checkbox"
+                    checked>  
+                    
+                Te gustaría recibir novedades de la Barbería ALura?
+                </label>
+
+                <!--Botón enviar datos-->
+                <input class="enviarDatos" type="submit" value="Enviar datos">
+
+            </form>
+
+            <!--Tabla de horarios-->
+            <p>Nuestros horarios:</p>
+
+            <table class="tablaHorarios">
+                <thead>
+
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+    
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="líneasTablaHorarios">Lunes</td>
+                        <td class="líneasTablaHorarios">08h-20hs</td>
+                    </tr>
+    
+                    <tr>
+                        <td class="líneasTablaHorarios">Miércoles</td>
+                        <td class="líneasTablaHorarios">08h-20hs</td>
+                    </tr>
+    
+                    <tr>
+                        <td class="líneasTablaHorarios">Viernes</td>
+                        <td class="líneasTablaHorarios">08h-20hs</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+
+            <img src="imagenes productos barbería/logo-blanco.png" alt="Logo de la barbería">
+            <p class="copyright">&copy Copyright Barbería Alura - est.2020</p>
+
+        </footer>
+
+    </body>
+
+</html>

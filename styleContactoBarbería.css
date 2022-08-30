@@ -1,0 +1,133 @@
+/*header*/
+header{
+    background-color:antiquewhite;
+    padding: 20px 0;
+}
+
+body{
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/*navegador*/
+.navegadorcontacto{
+    position: absolute;
+    top: 40%;
+    right: 8%;
+}
+
+nav li{
+    display:inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    color:black
+}
+
+nav a:hover{
+    color:brown;
+    text-decoration:underline;
+}
+
+/*formulario*/
+main{
+    width: 940px;
+    margin:0 auto;
+}
+
+.etiquetasFormulario{
+    display:block;
+    margin: 20px 0 10px;
+}
+
+.elementosFormulario{
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width:50%; /*50% de los 940px que abarca el main*/
+}
+
+input value{
+    padding: 20px;
+}
+
+form{
+    margin:40px 0;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.selectTurno{
+    margin-bottom: 20px;
+}
+
+.enviarDatos{
+    width:40%;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: darkorange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviarDatos:hover{
+    background-color: orange;
+    transform: scale(1.05);
+}
+
+/*tabla de horarios*/
+.tablaHorarios{
+    margin: 10px 20px;
+}
+
+thead{
+    background-color: #555555;
+    color:white;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+
+.líneasTablaHorarios{
+    border:1px solid #000000;
+    padding:8px 15px;
+
+}
+
+
+/*footer*/
+footer{
+    text-align:center;
+    background-color: black;
+    background: url(bg.jpg);
+    padding: 40px;
+    margin:0 auto;
+}
+
+.copyright{
+    color: azure;
+    font-style: italic;
+    font-size: 13px;
+    
+    margin-bottom: 0px;
+    
+    padding: 20px;
+}

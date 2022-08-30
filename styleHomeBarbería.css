@@ -1,0 +1,141 @@
+/*header*/
+header{
+    background-color:antiquewhite;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*navegador*/
+.navegadorcontacto{
+    position: absolute;
+    top: 40%;
+    right: 8%;
+}
+
+nav li{
+    display:inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    color:black;
+}
+
+nav a:hover{
+    color:brown;
+    text-decoration:underline;
+}
+
+nav a:hover{
+    color:brown;
+    text-decoration:underline;
+}
+
+/*Información*/
+.imagenSalón{
+    width:50%;
+    display: inline-block;
+    padding-left: 49%;
+    padding-top: 30px;
+}
+
+.sobreBarbería{
+    padding: 20px;
+    display: inline-block;
+    position: absolute;
+    width:47%;
+    font-size: larger;
+    clear:left;
+}
+
+/*Diferenciales*/
+.items{
+    font-style:oblique;
+    font-size: larger;
+}
+
+.items:before{
+    content:"☆ ";
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.diferenciales{
+    display:inline-block;
+    vertical-align: top;
+    position: absolute;
+    width:640px;
+    margin: 0 auto;
+}
+
+.imagenPeluquero{
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.imagenUtensilios{
+    width:120px;
+    float:left;
+    margin:0 20px;
+}
+
+
+/*Video demostrativo*/
+.video{
+   width: 560px;
+   margin: 30px auto;
+}
+
+
+/*footer*/
+footer{
+    text-align:center;
+    background-color: black;
+    background: url(bg.jpg);
+    padding: 40px;
+    margin:0 auto;
+}
+
+.copyright{
+    color: azure;
+    font-style: italic;
+    font-size: 13px;
+    
+    margin-bottom: 0px;
+    
+    padding: 20px;
+}
+
+@media screen and (max-width:480px){
+
+    .caja, .video, .sobreBarbería, .diferenciales{
+        width: auto;
+        margin: auto;
+    }
+
+    .navegadorcontacto{
+        position: absolute;
+        text-align: right;
+    }
+
+    footer{
+        height:20%;
+    }
+}
